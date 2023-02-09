@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+<body>
+ <script>
+ alert( "I’m JavaScript!");   //(string starting and ending must be double quotes, while using single quote inside the string)
+ </script>                    //(Or  use backslash (\) while using single quotes ('I\’m JavaScript!')
+ Whats the error in this ?
+</body>
+</html>
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="fix1script.js"></script>
+   </body>
+   </html>
+   
+  (fix1script.js)
+  
+alert("I'm invoked!");       //( have to use proper double quotetions)
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="fix2.js"></script>
+   </body>
+   </html>
+
+	(fix2.js)   
+	
+let admin=9, fname=10.5; 
+fname = "Guvi";
+lname = "geek"                        //( without declaring auto take it has var.)
+admin = fname+" "+lname;                  //( add space between)
+alert( admin );
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="fix3.js"></script>
+   </body>
+   </html>
+   
+   (fix3.js)
+   
+let fname=10.5; 
+fname = "Guvi";
+lname = "geek"
+let name = fname+" "+lname;                       //(add space " ")  
+alert( `hello ${name}` );                         //( For Template literals use backticks)  
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="fix4.js"></script>
+   </body>
+   </html>
+   
+   (fix4.js)
+   
+let a = prompt("First number?");
+let b = prompt("Second number?");
+alert(parseInt(a)+ parseInt (b));                //(converting into Number and then add)
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="fix5.js"></script>
+   </body>
+   </html>
+   
+   (fix5.js)
+   
+var a = 2 > 12;                                 //(While using as string, it checks the first characters i.e.(2 and 1) only. a = true.)    
+//Don't touch below this                        //(changing into Number  or  change 1 in 12 into greater than 2 that is 32 or 4 ...)
+if (a) {
+  console.log("Code is Blasted")
+}
+else
+{
+  console.log("Diffused") 
+}
+
+
+<!DOCTYPE html>
+   <html>
+   <body>
+    <script src="explain.js"></script>
+   </body>
+   </html>
+   
+  // (explain.js)
+   
+alert("I'm JavaScript!");
+alert('Hello') // this line is not having semicolon         // (Line 100 : for single statement in a line in JavaScript
+alert(`Wor                                                  //  semicolon (;) will be inserted auto(is optional) by JS. )    
+ ld`)
+alert(3 +                                                   // (JavaScript accepts multiline codeing. it automatically recoganish the
+1                                                           //  statement.)
++ 2); // this is multiple line code and its working               
+                                                 
+
+
+ // You cant change the value of the msg
+let message;
+if (null || 2 || undefined )
+{
+ let message = "welcome boss";                             //(The key word let is block scope. so avoid redeclaring message)
+}                                                          //(message = "welcome boss";) removing let will print.
+else
+{
+ let message = "Go away";
+}
+  console.log(message); 
+  
+
+      //Fix the code to welcome the boss
+        
+let message;
+let lock = 2;                                             //(change put let lock = 0;)
+//Dont change any code below this 
+if (null || lock || undefined )
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+  console.log(message);         
+  
+  
+   // Fix the code to welcome the boss
+    
+let message;
+let lock = 2;                                        //(change put let lock = 0; or null; or undefined;)
+//Dont change any code below this
+if (lock && " " || undefined )                          
+{
+  message = "Go away";
+}
+else
+{
+ message = "welcome";
+}
+console.log(message); 
+
+
+
+        //Change the code to print
+
+      //3
+
+      //2
+
+      //1
+
+
+//You can change only 2 characters
+let i = 3;
+while (i) {
+  console.log( --i );                        //console.log(i--);
+}
+
+
+
+         // Change the code to print 1 to 10 in 4 lines
+          
+let num = 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+num += 1
+console.log(num)
+
+      
+let num = 1
+console.log(num)                //(this code will print   1
+for(var i=0;i<3;i++)                                      2 3 4
+console.log(++num,++num,++num);                           5,6,7
+                                                          8,9,10)
+   
+      // Change the code to print even numbers
+      
+//You are allowed to modify only one character 
+for (let num = 2; num <= 20; num += 1) {          //(change num += 2)
+  console.log(num)
+} 
+
+
+        //Change the code to print all the gifts     
+        
+let gifts = ["teddy bear", "drone", "doll"];
+for (let i = 0; i < 3; i++) {                                 //(remove single quotations and backticks only)
+  console.log('Wrapped ${'gifts[i]'} and added a bow!');      //console.log(`Wrapped ${gifts[i]} and added a bow!`);
+} 
+
+
+
+             //Fix the code to disarm the bomb. 
+             
+let countdown = 100;
+while (countdown > 0) {
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+}
+
+let countdown = 100;
+while (countdown > 99) {                                  //(change 0 to 99)
+  countdown--;
+  if(countdown == 0)
+  {
+   console.log("bomb triggered");
+  }
+  else
+  {
+    console.log("bomb disarmed");
+  }
+}   
+
+
+
+           //Whats the msg printed and why?  
+           
+var lemein = '0';
+var lemeout = 0;
+var msg = '';
+if (lemein) {
+ msg += 'hi';
+ }
+if (lemeout) {
+ msg += 'Hello';
+}
+console.log(msg);                           //(hi is printed. because string "0" is true., but number 0 is false)
+
+
+
+                                            
